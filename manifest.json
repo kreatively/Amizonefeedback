@@ -1,0 +1,24 @@
+{  
+  "manifest_version": 2,  
+
+  "name": "Amizone feedback",  
+  "description": "Are you done with tab+space here is super cool extension which can fill faculty form for you without any hassle.",  
+  "version": "2.3",    
+  "permissions": ["https://student.amizone.net/"],  
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {  
+      "default_icon": "icon_128.png",  
+      "default_popup": "popup.html"  
+  },
+  
+  "content_scripts": [{
+    "matches": ["https://student.amizone.net/Home"],
+    "js": ["jquery-2.1.1.js","contentScript.js"]
+}]
+
+}
