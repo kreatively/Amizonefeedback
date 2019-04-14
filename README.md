@@ -32,7 +32,7 @@ $ git checkout -b branchname
 - Add your changes and commit them 
  ```sh
 $ git add -A
-$ git commit -m"meaningful commit message"
+$ git commit -m "meaningful commit message"
  ```
 - Push your changes to your forked copy
  ```sh
